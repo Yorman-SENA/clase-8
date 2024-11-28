@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Nunito';
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.header-content .logos {
+    align-content: center;
+}
+
+.header-content .logos a {
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+    height: 300px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.img-logo {
+    height: 80px;
+    width: 80px;
+}
+
+.grid-container {
+    grid-template-areas: 'logo header header header header'
+        'nav nav nav nav nav'
+        'main main main main main'
+        'footer footer footer footer footer';
+    background-color: blue;
+    border-color: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+}
+
+.box {
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 2px;
+    text-align: center;
+    align-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.nav-item {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: rgb(48, 48, 137);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer .social-networks {
+    justify-content: start;
+}
+
+.footer p {
+    justify-content: center;
+}
+
+.form-input {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 5px;
+}
+
+.form-input {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.form-contact {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card-content .card {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.card-content .card .img-card {
+    height: 100px;
+    width: 100px;
+}
